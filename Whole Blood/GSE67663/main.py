@@ -1,0 +1,263 @@
+from pathlib import Path
+import sys
+
+def _find_project_root(start: Path) -> Path:
+    current = start.resolve()
+    for parent in [current, *current.parents]:
+        if (parent / "preprocessing.py").exists():
+            return parent
+    raise RuntimeError("Could not locate project root containing preprocessing.py")
+
+
+PROJECT_ROOT = _find_project_root(Path(__file__).parent)
+TEST_DIR = Path(__file__).resolve().parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from preprocessing import run_preprocessor
+from analyze_depression_expression import run_expression_analysis
+from analyze_cell_population_proxies import run_cell_proxy_analysis
+from run_qc_normalize_r import run_qc_normalization
+
+mapping_text = """
+GSM1652966	S5881
+GSM1652967	S5965
+GSM1652968	S5988
+GSM1652969	S5994
+GSM1652970	S6023
+GSM1652971	S6053
+GSM1652972	S6070
+GSM1652973	S6077
+GSM1652974	S6078
+GSM1652975	S6094
+GSM1652976	S6096
+GSM1652977	S6098
+GSM1652978	S6099
+GSM1652979	S6100
+GSM1652980	S6110
+GSM1652981	S6114
+GSM1652982	S6153
+GSM1652983	S6163
+GSM1652984	S6181
+GSM1652985	S6204
+GSM1652986	S6216
+GSM1652987	S6220
+GSM1652988	S6228
+GSM1652989	S6233
+GSM1652990	S6263
+GSM1652991	S6279
+GSM1652992	S6283
+GSM1652993	S6285
+GSM1652994	S6297
+GSM1652995	S6302
+GSM1652996	S6324
+GSM1652997	S6331
+GSM1652998	S6334
+GSM1652999	S6361
+GSM1653000	S6394
+GSM1653001	S6402
+GSM1653002	S6436
+GSM1653003	S6446
+GSM1653004	S6462
+GSM1653005	S6486
+GSM1653006	S6492
+GSM1653007	S6496
+GSM1653008	S6497
+GSM1653009	S6519
+GSM1653010	S6522
+GSM1653011	S6562
+GSM1653012	S6563
+GSM1653013	S6564
+GSM1653014	S6565
+GSM1653015	S6569
+GSM1653016	S6596
+GSM1653017	S6610
+GSM1653018	S6648
+GSM1653019	S6656
+GSM1653020	S6678
+GSM1653021	S6682
+GSM1653022	S6683
+GSM1653023	S6711
+GSM1653024	S6729
+GSM1653025	S6731
+GSM1653026	S6748
+GSM1653027	S6753
+GSM1653028	S6759
+GSM1653029	S6771
+GSM1653030	S6778
+GSM1653031	S6798
+GSM1653032	S6800
+GSM1653033	S6801
+GSM1653034	S6828
+GSM1653035	S6848
+GSM1653036	S6937
+GSM1653037	S7005
+GSM1653038	S7017
+GSM1653039	S7019
+GSM1653040	S7030
+GSM1653041	S7032
+GSM1653042	S7052
+GSM1653043	S7058
+GSM1653044	S7059
+GSM1653045	S7144
+GSM1653046	S7155
+GSM1653047	S7178
+GSM1653048	S7190
+GSM1653049	S7216
+GSM1653050	S7236
+GSM1653051	S7239
+GSM1653052	S7241
+GSM1653053	S7243
+GSM1653054	S7262
+GSM1653055	S7275
+GSM1653056	S7305
+GSM1653057	S7326
+GSM1653058	S7366
+GSM1653059	S7372
+GSM1653060	S7395
+GSM1653061	S7406
+GSM1653062	S7411
+GSM1653063	S7427
+GSM1653064	S7458
+GSM1653065	S7462
+GSM1653066	S7463
+GSM1653067	S7465
+GSM1653068	S7470
+GSM1653069	S7528
+GSM1653070	S7536
+GSM1653071	S7620
+GSM1653072	S7733
+GSM1653073	S7858
+GSM1653074	S8158
+GSM1653075	S8178
+GSM1653076	S8293
+GSM1653077	S8357
+GSM1653078	S8369
+GSM1653079	S8383
+GSM1653080	S8502
+GSM1653081	S8586
+GSM1653082	S8593
+GSM1653083	S8597
+GSM1653084	S8622
+GSM1653085	S8697
+GSM1653086	S8777
+GSM1653087	S8798
+GSM1653088	S8855
+GSM1653089	S8857
+GSM1653090	S8897
+GSM1653091	S8985
+GSM1653092	S8993
+GSM1653093	S9048
+GSM1653094	S9050
+GSM1653095	S9065
+GSM1653096	S9083
+GSM1653097	S9116
+GSM1653098	S9157
+GSM1653099	S9167
+GSM1653100	S9204
+GSM1653101	S9215
+GSM1653102	S9251
+GSM1653103	S9257
+GSM1653104	S9270
+GSM1653105	S9295
+GSM1653106	S9300
+GSM1653107	S9301
+GSM1653108	S9304
+GSM1653109	S9350
+GSM1653110	S9367
+GSM1653111	S9372
+GSM1653112	S9377
+GSM1653113	S9403
+GSM1653114	S9483
+GSM1653115	S9552
+GSM1653116	S9589
+GSM1653117	S9599
+GSM1653118	S9603
+GSM1653119	S9646
+GSM1653120	S9688
+GSM1653121	S9704
+GSM1653122	S9709
+GSM1653123	S9757
+GSM1653124	S10030
+GSM1653125	S10036
+GSM1653126	S10073
+GSM1653127	S10101
+GSM1653128	S10170
+GSM1653129	S10175
+GSM1653130	S10222
+GSM1653131	S10230
+GSM1653132	S10244
+GSM1653133	S10306
+GSM1653134	S10333
+GSM1653135	S10361
+GSM1653136	S10411
+GSM1653137	S10482
+GSM1653138	S10493
+GSM1653139	S10585
+GSM1653140	S10653
+GSM1653141	S10858
+GSM1653142	S10923
+GSM1653143	S10969
+GSM1653144	S10992
+GSM1653145	S11045
+GSM1653146	S11073
+GSM1653147	S11109
+GSM1653148	S11119
+GSM1653149	S11294
+"""
+
+
+expression_csv, metadata_csv = run_preprocessor(
+    mapping_text,
+    TEST_DIR / "original_data/GSE67663_series_matrix.txt",
+    TEST_DIR / "processed_data",
+    annotation_path=TEST_DIR / "original_data/GPL6884_annotation.csv",
+    mapping_strip_prefix=None,
+    sample_title_prefix=None,
+    phenotype_column_name="ptsd_depression_status",
+    phenotype_characteristic_name="comorbid ptsd and depression status",
+    phenotype_value_map={
+        "1": "Case",
+        "0": "Control",
+    },
+)
+
+qc_dir = TEST_DIR / "qc_normalized"
+qc_normalized_csv = run_qc_normalization(
+    expression_file=TEST_DIR / "processed_data" / "annotated_renamed_unlogged.csv",
+    metadata_file=metadata_csv,
+    output_dir=qc_dir,
+    metadata_sample_column="analysis_sample",
+    phenotype_column="ptsd_depression_status",
+    batch_column="hybridization batch",
+)
+
+results_dir = TEST_DIR / "expression_analysis_results"
+run_expression_analysis(
+    input_file=qc_normalized_csv,
+    output_dir=results_dir,
+    metadata_file=TEST_DIR / "processed_data" / "sample_metadata.csv",
+    metadata_sample_column="analysis_sample",
+    metadata_phenotype_column="ptsd_depression_status",
+    control_label_keywords="control",
+    case_label_keywords="case",
+    control_label="Control",
+    case_label="Case",
+)
+
+run_cell_proxy_analysis(
+    input_file=results_dir / "deduplicated_expression_dataset.csv",
+    metadata_file=TEST_DIR / "processed_data" / "sample_metadata.csv",
+    output_dir=TEST_DIR / "cell_population_proxies",
+    markers_csv=PROJECT_ROOT / "markers" / "blood_cell_markers.csv",
+    metadata_sample_column="analysis_sample",
+    metadata_phenotype_column="ptsd_depression_status",
+    control_label_keywords="control",
+    case_label_keywords="case",
+    control_label="Control",
+    case_label="Case",
+)
+
+print(f"Expression output: {expression_csv}")
+print(f"Metadata output:   {metadata_csv}")
+print(f"Analysis outputs:  {TEST_DIR / 'cell_population_proxies'}")

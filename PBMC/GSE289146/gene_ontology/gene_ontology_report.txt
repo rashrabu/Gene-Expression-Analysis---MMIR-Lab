@@ -1,0 +1,72 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 49 terms with FDR < 0.05
+                                                              Term  Adjusted P-value  Combined Score
+    Fatty Acid Elongation, Monounsaturated Fatty Acid (GO:0034625)          0.040273     4756.692199
+          Positive Regulation Of Cell Differentiation (GO:0045597)          0.040273       78.160673
+Regulation Of Cell-Cell Adhesion Mediated By Cadherin (GO:2000047)          0.040273      670.926470
+                                   Limb Morphogenesis (GO:0035108)          0.040273      670.926470
+                Embryonic Digestive Tract Development (GO:0048566)          0.040273      670.926470
+                               Copper Ion Homeostasis (GO:0055070)          0.040273      670.926470
+                     T Cell Differentiation In Thymus (GO:0033077)          0.040273      751.395756
+                        Embryonic Digit Morphogenesis (GO:0042733)          0.040273      751.395756
+                                 Response To Iron Ion (GO:0010039)          0.040273      751.395756
+             Blood Coagulation, Fibrin Clot Formation (GO:0072378)          0.040273      851.167920
+                                      Response To BMP (GO:0071772)          0.040273      851.167920
+                           Protein Activation Cascade (GO:0072376)          0.040273      851.167920
+         Positive Regulation Of Vascular Permeability (GO:0043117)          0.040273      977.818817
+                 Intracellular Copper Ion Homeostasis (GO:0006878)          0.040273      977.818817
+        Negative Regulation Of T Cell Differentiation (GO:0045581)          0.040273      977.818817
+
+GO_Cellular_Component_2023_up: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_up: 10 terms with FDR < 0.05
+                                                                       Term  Adjusted P-value  Combined Score
+                                             Cytokine Activity (GO:0005125)          0.022565      264.557932
+                                  Fatty Acid Elongase Activity (GO:0009922)          0.022565     4756.692199
+          Protein-Glutamine Gamma-Glutamyltransferase Activity (GO:0003810)          0.022565     3023.492535
+                                          BMP Receptor Binding (GO:0070700)          0.022565     1689.275951
+Transmembrane Receptor Protein Serine/Threonine Kinase Binding (GO:0070696)          0.022565     1689.275951
+                                  Fatty Acid Synthase Activity (GO:0004312)          0.022565     1368.195268
+                               CXCR Chemokine Receptor Binding (GO:0045236)          0.027604      851.167920
+                             Histone Acetyltransferase Binding (GO:0035035)          0.040968      427.815076
+                                            Chemokine Activity (GO:0008009)          0.044927      326.035002
+                                    Chemokine Receptor Binding (GO:0042379)          0.046165      274.604543
+
+KEGG_2021_Human_up: 0 terms with FDR < 0.05
+
+GO_Biological_Process_2023_down: 26 terms with FDR < 0.05
+                                                                 Term Adjusted P-value Combined Score
+           Regulation Of Leukocyte Mediated Cytotoxicity (GO:0001910)         0.004305   28537.389633
+       Regulation Of Myeloid Leukocyte Mediated Immunity (GO:0002886)         0.004305   24018.823327
+       Neutrophil Activation Involved In Immune Response (GO:0002283)         0.004305   16075.351185
+                   Regulation Of RNA Export From Nucleus (GO:0046831)         0.004305   16075.351185
+               Regulation Of Acute Inflammatory Response (GO:0002673)         0.004305   13073.426728
+               Regulation Of Nucleocytoplasmic Transport (GO:0046822)         0.004305   10968.767547
+                                   DNA Catabolic Process (GO:0006308)         0.004305   10137.716588
+         Positive Regulation Of Translational Initiation (GO:0045948)         0.004305   10137.716588
+                                   Neutrophil Activation (GO:0042119)         0.004305   10137.716588
+                        Cell Cycle G1/S Phase Transition (GO:0044843)         0.007744     2692.08807
+Regulation Of Alternative mRNA Splicing, Via Spliceosome (GO:0000381)         0.007744    2833.777016
+        Nucleobase-Containing Compound Catabolic Process (GO:0034655)         0.007744    2989.665538
+                        Cell Cycle G2/M Phase Transition (GO:0044839)         0.007744    3806.505741
+                   G2/M Transition Of Mitotic Cell Cycle (GO:0000086)         0.007744    4077.502555
+      Positive Regulation Of Nucleocytoplasmic Transport (GO:0046824)         0.007744    3161.931011
+
+GO_Cellular_Component_2023_down: 2 terms with FDR < 0.05
+                                                 Term Adjusted P-value Combined Score
+                                 Nucleus (GO:0005634)         0.034016            inf
+Intracellular Membrane-Bounded Organelle (GO:0043231)         0.034016            inf
+
+GO_Molecular_Function_2023_down: 10 terms with FDR < 0.05
+                                        Term Adjusted P-value Combined Score
+                    DNA Binding (GO:0003677)         0.004914            inf
+            poly(U) RNA Binding (GO:0008266)         0.004914    8226.569414
+                poly(A) Binding (GO:0008143)         0.004914    7730.929524
+  Poly-Pyrimidine Tract Binding (GO:0008187)         0.004914     6889.27782
+      Poly-Purine Tract Binding (GO:0070717)         0.004914    5631.778924
+             SH2 Domain Binding (GO:0042169)         0.004914    4556.867463
+             SH3 Domain Binding (GO:0017124)         0.007469    2284.331104
+Protein Tyrosine Kinase Binding (GO:1990782)         0.007603    1901.852159
+                   mRNA Binding (GO:0003729)         0.025456     367.452536
+         Protein Kinase Binding (GO:0019901)         0.041103     171.377023

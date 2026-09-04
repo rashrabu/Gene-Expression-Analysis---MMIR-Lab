@@ -1,0 +1,44 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 59 terms with FDR < 0.05
+                                                             Term  Adjusted P-value  Combined Score
+                       Leukotriene Metabolic Process (GO:0006691)          0.000321     2809.149218
+                                      Heme Transport (GO:0015886)          0.002786     5681.481560
+          Regulation Of Response To Oxidative Stress (GO:1902882)          0.003894     3177.039513
+                            Myoblast Differentiation (GO:0045445)          0.014006      940.390376
+         Regulation Of Response To External Stimulus (GO:0032101)          0.014006      243.212231
+Positive Regulation Of Response To External Stimulus (GO:0032103)          0.031680      149.277096
+                          Regulation Of Angiogenesis (GO:0045765)          0.031680      134.917234
+                         Regulation Of Wound Healing (GO:0061041)          0.031680      381.358921
+                    Negative Regulation Of Transport (GO:0051051)          0.031921      350.402056
+                         Icosanoid Metabolic Process (GO:0006690)          0.036115      300.083569
+         Negative Regulation Of Response To Stimulus (GO:0048585)          0.042265      252.647494
+                 Regulation Of Inflammatory Response (GO:0050727)          0.046072       87.981311
+        Positive Regulation Of Inflammatory Response (GO:0050729)          0.046455       97.081478
+Positive Regulation Of Immune Response To Tumor Cell (GO:0002839)          0.046455      931.461896
+        Cardiac Muscle Cell Myoblast Differentiation (GO:0060379)          0.046455      931.461896
+
+GO_Cellular_Component_2023_up: 1 terms with FDR < 0.05
+                                Term  Adjusted P-value  Combined Score
+Secretory Granule Lumen (GO:0034774)          0.021969       98.422913
+
+GO_Molecular_Function_2023_up: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_up: 1 terms with FDR < 0.05
+                       Term  Adjusted P-value  Combined Score
+Arachidonic acid metabolism          0.034925      269.962211
+
+GO_Biological_Process_2023_down: 2 terms with FDR < 0.05
+                                                        Term  Adjusted P-value  Combined Score
+                  Gamma-Delta T Cell Activation (GO:0046629)          0.006537     3177.039513
+Positive Regulation Of Lymphocyte Proliferation (GO:0050671)          0.006813      397.273341
+
+GO_Cellular_Component_2023_down: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_down: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_down: 3 terms with FDR < 0.05
+                                  Term  Adjusted P-value  Combined Score
+            Hematopoietic cell lineage          0.008564      264.090733
+              Primary immunodeficiency          0.019677      365.311844
+Cytokine-cytokine receptor interaction          0.030457       82.394860

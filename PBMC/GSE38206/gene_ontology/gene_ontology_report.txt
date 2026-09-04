@@ -1,0 +1,100 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 85 terms with FDR < 0.05
+                                                                                          Term  Adjusted P-value  Combined Score
+Antigen Processing And Presentation Of Exogenous Peptide Antigen Via MHC Class II (GO:0019886)          0.000556     1603.989051
+          Antigen Processing And Presentation Of Peptide Antigen Via MHC Class II (GO:0002495)          0.000556     1603.989051
+                 Antigen Processing And Presentation Of Exogenous Peptide Antigen (GO:0002478)          0.000701     1204.898851
+                       Peptide Antigen Assembly With MHC Class II Protein Complex (GO:0002503)          0.010298     1123.919846
+                                            MHC Class II Protein Complex Assembly (GO:0002399)          0.010298     1123.919846
+    Immunoglobulin Production Involved In Immunoglobulin-Mediated Immune Response (GO:0002381)          0.011297      932.766472
+                                Peptide Antigen Assembly With MHC Protein Complex (GO:0002501)          0.012325      792.675524
+                                          Immunoglobulin Mediated Immune Response (GO:0016064)          0.028349      413.913057
+                                         Cellular Response To Mechanical Stimulus (GO:0071260)          0.039239      277.022535
+                                                  Mesodermal Cell Fate Commitment (GO:0001710)          0.039239             inf
+                              Positive Regulation Of Leukocyte Cell-Cell Adhesion (GO:1903039)          0.039239      267.659530
+                                     Positive Regulation Of Lymphocyte Activation (GO:0051251)          0.039636      250.485346
+                               Positive Regulation Of Apoptotic Signaling Pathway (GO:2001235)          0.042704      214.901964
+                               Negative Regulation Of DNA-templated Transcription (GO:0045892)          0.042704       40.829362
+                                                  Regulation Of T Cell Activation (GO:0050863)          0.044807      197.482588
+
+GO_Cellular_Component_2023_up: 22 terms with FDR < 0.05
+                                                       Term  Adjusted P-value  Combined Score
+                             Endocytic Vesicle (GO:0030139)          0.001192      256.694713
+                                 Late Endosome (GO:0005770)          0.001192      248.956951
+                  MHC Class II Protein Complex (GO:0042613)          0.003763     1020.418770
+                           MHC Protein Complex (GO:0042611)          0.005615      641.746838
+Lumenal Side Of Endoplasmic Reticulum Membrane (GO:0098553)          0.006395      506.188374
+                       Coated Vesicle Membrane (GO:0030662)          0.014768      208.813426
+        ER To Golgi Transport Vesicle Membrane (GO:0012507)          0.014768      203.013369
+                    Transport Vesicle Membrane (GO:0030658)          0.014768      197.482588
+    Clathrin-Coated Endocytic Vesicle Membrane (GO:0030669)          0.014768      192.203516
+              Clathrin-Coated Vesicle Membrane (GO:0030665)          0.016793      143.725458
+             Clathrin-Coated Endocytic Vesicle (GO:0045334)          0.016793      146.939617
+                        Late Endosome Membrane (GO:0031902)          0.016793      150.276704
+    COPII-coated ER To Golgi Transport Vesicle (GO:0030134)          0.016982      134.758943
+                     Specific Granule Membrane (GO:0035579)          0.017924      117.129003
+                  trans-Golgi Network Membrane (GO:0032588)          0.017924      117.129003
+
+GO_Molecular_Function_2023_up: 25 terms with FDR < 0.05
+                                                                                 Term  Adjusted P-value  Combined Score
+                                               Adenyl Nucleotide Binding (GO:0030554)          0.011762      932.766472
+                                    MHC Class II Protein Complex Binding (GO:0023026)          0.011762      535.047447
+                                  Calcium-Dependent Phospholipid Binding (GO:0005544)          0.011762      506.188374
+                                     Flavin Adenine Dinucleotide Binding (GO:0050660)          0.023784      258.827896
+DNA-binding Transcription Activator Activity, RNA Polymerase II-specific (GO:0001228)          0.035242       71.008737
+                                          Retinal Dehydrogenase Activity (GO:0001758)          0.039565     2038.090194
+                             Transcription Cis-Regulatory Region Binding (GO:0000976)          0.039565       44.010300
+                                MAP Kinase Tyrosine Phosphatase Activity (GO:0033550)          0.039565      924.129314
+               MAP Kinase Tyrosine/Serine/Threonine Phosphatase Activity (GO:0017017)          0.039565      924.129314
+                         Protein Tyrosine/Threonine Phosphatase Activity (GO:0008330)          0.039565      924.129314
+                                       Histone H3K4 Demethylase Activity (GO:0032453)          0.039565      924.129314
+                                     G Protein-Coupled Receptor Activity (GO:0004930)          0.039565       83.296643
+                                         MAP Kinase Phosphatase Activity (GO:0033549)          0.041135      712.223175
+                                                   C-C Chemokine Binding (GO:0019957)          0.044533      574.449108
+                                          MHC Class II Receptor Activity (GO:0032395)          0.047089      407.536990
+
+KEGG_2021_Human_up: 29 terms with FDR < 0.05
+                                        Term  Adjusted P-value  Combined Score
+             Staphylococcus aureus infection          0.000056      899.212962
+                                   Phagosome          0.000414      309.187607
+Intestinal immune network for IgA production          0.000414      701.787160
+                        Rheumatoid arthritis          0.001041      360.915969
+         Antigen processing and presentation          0.001041      339.170211
+     Human T-cell leukemia virus 1 infection          0.001041      169.664842
+                                      Asthma          0.003593      566.923912
+                                Tuberculosis          0.004879      132.227392
+                         Allograft rejection          0.004879      378.158260
+                    Type I diabetes mellitus          0.004879      362.239983
+                  Autoimmune thyroid disease          0.004879      333.676632
+                   Graft-versus-host disease          0.004879      320.822153
+                Systemic lupus erythematosus          0.005878      267.659530
+                  Inflammatory bowel disease          0.007933      197.482588
+                           Viral myocarditis          0.007933      203.013369
+
+GO_Biological_Process_2023_down: 37 terms with FDR < 0.05
+                                                                                Term  Adjusted P-value  Combined Score
+                                    Positive Regulation Of Gastrulation (GO:2000543)          0.041831     4377.745770
+                                               Ureteric Bud Development (GO:0001657)          0.041831      574.449108
+                               Embryonic Cranial Skeleton Morphogenesis (GO:0048701)          0.041831      574.449108
+         Regulation Of Branching Involved In Ureteric Bud Morphogenesis (GO:0090189)          0.041831      574.449108
+                                                       piRNA Processing (GO:0034587)          0.041831      574.449108
+                                         Mesonephric Tubule Development (GO:0072164)          0.041831      712.223175
+                                      Cell Differentiation In Hindbrain (GO:0021533)          0.041831      712.223175
+                                                   Ectoderm Development (GO:0007398)          0.041831      712.223175
+                                    Cell Differentiation In Spinal Cord (GO:0021515)          0.041831      712.223175
+                                          Urogenital System Development (GO:0001655)          0.041831      924.129314
+Positive Regulation Of Branching Involved In Ureteric Bud Morphogenesis (GO:0090190)          0.041831      924.129314
+           Regulation Of Nephron Tubule Epithelial Cell Differentiation (GO:0072182)          0.041831      924.129314
+                                             Motor Neuron Axon Guidance (GO:0008045)          0.041831      924.129314
+                                 Gastrulation With Mouth Forming Second (GO:0001702)          0.041831     1287.439676
+                                 Glycerol-3-Phosphate Metabolic Process (GO:0006072)          0.041831     2038.090194
+
+GO_Cellular_Component_2023_down: 2 terms with FDR < 0.05
+                                          Term  Adjusted P-value  Combined Score
+                 Perineuronal Net (GO:0072534)          0.045289     1287.439676
+Perisynaptic Extracellular Matrix (GO:0098966)          0.045289      924.129314
+
+GO_Molecular_Function_2023_down: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_down: 0 terms with FDR < 0.05

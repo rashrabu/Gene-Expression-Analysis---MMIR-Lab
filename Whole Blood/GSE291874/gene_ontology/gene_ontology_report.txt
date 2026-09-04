@@ -1,0 +1,25 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 0 terms with FDR < 0.05
+
+GO_Cellular_Component_2023_up: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_up: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_up: 1 terms with FDR < 0.05
+                           Term  Adjusted P-value  Combined Score
+Fructose and mannose metabolism           0.04228      272.168515
+
+GO_Biological_Process_2023_down: 0 terms with FDR < 0.05
+
+GO_Cellular_Component_2023_down: 3 terms with FDR < 0.05
+                                                     Term  Adjusted P-value  Combined Score
+                                   Nucleolus (GO:0005730)          0.005798       50.858210
+                               Nuclear Lumen (GO:0031981)          0.005798       50.148322
+Intracellular Non-Membrane-Bounded Organelle (GO:0043232)          0.035378       23.877024
+
+GO_Molecular_Function_2023_down: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_down: 1 terms with FDR < 0.05
+                             Term  Adjusted P-value  Combined Score
+Ribosome biogenesis in eukaryotes          0.003021      170.769232

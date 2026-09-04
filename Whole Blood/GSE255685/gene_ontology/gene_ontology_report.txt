@@ -1,0 +1,105 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 113 terms with FDR < 0.05
+                                                          Term  Adjusted P-value  Combined Score
+                        Dendritic Cell Chemotaxis (GO:0002407)          0.000097     4009.464402
+                         Dendritic Cell Migration (GO:0036336)          0.000097     3292.572496
+                                T Cell Activation (GO:0042110)          0.009088      312.014751
+         Positive Regulation Of T Cell Activation (GO:0050870)          0.009088      285.258743
+                              Response To Alcohol (GO:0097305)          0.009088     1119.005213
+            Regulation Of Transmembrane Transport (GO:0034762)          0.010558      896.828408
+Positive Regulation Of Mononuclear Cell Migration (GO:0071677)          0.014240      663.762988
+                Regulation Of Cytokine Production (GO:0001817)          0.017319      167.864541
+      Positive Regulation Of Leukocyte Chemotaxis (GO:0002690)          0.026940      320.933466
+                        Cellular Defense Response (GO:0006968)          0.026940      331.229106
+             Regulation Of T Cell Differentiation (GO:0045580)          0.026940      342.110261
+                            Inflammatory Response (GO:0006954)          0.028129      108.113456
+                             Relaxation Of Muscle (GO:0090075)          0.044322      460.590058
+                     Relaxation Of Cardiac Muscle (GO:0055119)          0.044322      460.590058
+                                T Cell Chemotaxis (GO:0010818)          0.044322      460.590058
+
+GO_Cellular_Component_2023_up: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_up: 18 terms with FDR < 0.05
+                                                                                                                 Term  Adjusted P-value  Combined Score
+                                                                             Chemokine Receptor Activity (GO:0004950)      1.680300e-07     5387.088685
+                                                     G Protein-Coupled Chemoattractant Receptor Activity (GO:0001637)      6.276400e-06     4483.237994
+                                                                                   C-C Chemokine Binding (GO:0019957)      2.975612e-04     4075.772025
+                                                                              Cytokine Receptor Activity (GO:0004896)      4.198574e-04      499.560411
+                                                                     G Protein-Coupled Receptor Activity (GO:0004930)      3.726345e-03      162.873262
+                                                                            MHC Class II Protein Binding (GO:0042289)      2.810714e-02     1195.932676
+                                                                              Alpha-Glucosidase Activity (GO:0090599)      2.810714e-02     1195.932676
+                                                                       Bioactive Lipid Receptor Activity (GO:0045125)      2.949657e-02      923.136965
+Voltage-Gated Potassium Channel Activity Involved In Cardiac Muscle Cell Action Potential Repolarization (GO:0086008)      3.492117e-02      621.526652
+                          UDP-galactose:beta-N-acetylglucosamine Beta-1,3-Galactosyltransferase Activity (GO:0008499)      3.533860e-02      530.282519
+                                                                 Beta-1,3-Galactosyltransferase Activity (GO:0048531)      3.618606e-02      405.764648
+                                                             Inward Rectifier Potassium Channel Activity (GO:0005242)      3.618606e-02      361.604553
+                                                                          CCR Chemokine Receptor Binding (GO:0048020)      3.618606e-02      361.604553
+                                                           Phosphatidylinositol Phospholipase C Activity (GO:0004435)      3.907484e-02      247.562766
+                                                                                       Chemokine Binding (GO:0019956)      3.907484e-02      247.562766
+
+KEGG_2021_Human_up: 4 terms with FDR < 0.05
+                                                         Term  Adjusted P-value  Combined Score
+Viral protein interaction with cytokine and cytokine receptor      8.362147e-07     1481.147012
+                       Cytokine-cytokine receptor interaction      1.907176e-06      594.338380
+                                  Chemokine signaling pathway      1.392986e-05      508.756590
+                                       Gastric acid secretion      2.311940e-02      230.389491
+
+GO_Biological_Process_2023_down: 118 terms with FDR < 0.05
+                                                                         Term  Adjusted P-value  Combined Score
+                Regulation Of Transcription By RNA Polymerase II (GO:0006357)          0.000765      118.014676
+                      Positive Regulation Of miRNA Transcription (GO:1902895)          0.000765     1064.480991
+              Positive Regulation Of DNA-templated Transcription (GO:0045893)          0.000765      116.467204
+       Positive Regulation Of Transcription By RNA Polymerase II (GO:0045944)          0.000765      128.758269
+                  Positive Regulation Of miRNA Metabolic Process (GO:2000630)          0.000765      892.682971
+                               Regulation Of miRNA Transcription (GO:1902893)          0.001064      701.682931
+            Regulation Of DNA-templated Transcription Initiation (GO:2000142)          0.001064     4075.772025
+                             Cytokine-Mediated Signaling Pathway (GO:0019221)          0.002132      218.200835
+                    Regulation Of Epidermal Cell Differentiation (GO:0045604)          0.003569     1463.107807
+                       Regulation Of DNA-templated Transcription (GO:0006355)          0.004212       58.799610
+                        Response To Endoplasmic Reticulum Stress (GO:0034976)          0.004611      277.189447
+                              Negative Regulation Of DNA Binding (GO:0043392)          0.008062      701.202041
+Negative Regulation Of DNA-binding Transcription Factor Activity (GO:0043433)          0.008752      188.522832
+                     Regulation Of Cell Population Proliferation (GO:0042127)          0.008752       72.728337
+                            Integrated Stress Response Signaling (GO:0140467)          0.008809      570.137859
+
+GO_Cellular_Component_2023_down: 2 terms with FDR < 0.05
+                                                 Term  Adjusted P-value  Combined Score
+                                 Nucleus (GO:0005634)          0.017980       27.990858
+Intracellular Membrane-Bounded Organelle (GO:0043231)          0.030598       19.287433
+
+GO_Molecular_Function_2023_down: 33 terms with FDR < 0.05
+                                                                                        Term  Adjusted P-value  Combined Score
+                                                  Sequence-Specific DNA Binding (GO:0043565)          0.000031      271.377055
+                                                    Double-Stranded DNA Binding (GO:0003690)          0.000131      214.473014
+                                  Sequence-Specific Double-Stranded DNA Binding (GO:1990837)          0.000189      174.826710
+                                                                    DNA Binding (GO:0003677)          0.001011      101.012082
+       DNA-binding Transcription Activator Activity, RNA Polymerase II-specific (GO:0001228)          0.001862      143.543279
+                            Cis-Regulatory Region Sequence-Specific DNA Binding (GO:0000987)          0.001862       71.887276
+          RNA Polymerase II Cis-Regulatory Region Sequence-Specific DNA Binding (GO:0000978)          0.001862       70.986691
+RNA Polymerase II Transcription Regulatory Region Sequence-Specific DNA Binding (GO:0000977)          0.002474       62.201867
+            RNA Polymerase II-specific DNA-binding Transcription Factor Binding (GO:0061629)          0.006761      111.523408
+                                                         Growth Factor Activity (GO:0008083)          0.006761      311.179034
+                                               Ubiquitin Protein Ligase Binding (GO:0031625)          0.014028       72.842016
+                                          Ubiquitin-Like Protein Ligase Binding (GO:0044389)          0.015324       65.894880
+                                         Double-Stranded Methylated DNA Binding (GO:0010385)          0.015324     2627.424876
+                                                              Cytokine Activity (GO:0005125)          0.020636      112.188100
+                                Mitogen-Activated Protein Kinase Kinase Binding (GO:0031434)          0.026519      923.136965
+
+KEGG_2021_Human_down: 51 terms with FDR < 0.05
+                                                      Term  Adjusted P-value  Combined Score
+                                   IL-17 signaling pathway          0.000002     1351.795313
+Epithelial cell signaling in Helicobacter pylori infection          0.000031     1032.125582
+                                       Coronavirus disease          0.000060      395.304832
+                                Osteoclast differentiation          0.000222      418.930831
+                   Human T-cell leukemia virus 1 infection          0.001359      199.958801
+                                    GnRH signaling pathway          0.001359      380.350048
+                      Toll-like receptor signaling pathway          0.001359      337.736269
+      AGE-RAGE signaling pathway in diabetic complications          0.001359      321.891587
+       Parathyroid hormone synthesis, secretion and action          0.001359      316.887995
+                                            Chagas disease          0.001441      293.732488
+                                        Yersinia infection          0.003436      186.474649
+                                               Hepatitis B          0.004343      159.680089
+                       NOD-like receptor signaling pathway          0.004515      150.693429
+                                            Bladder cancer          0.005135      378.787130
+                                         Cocaine addiction          0.005135      378.787130

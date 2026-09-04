@@ -1,0 +1,80 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 23 terms with FDR < 0.05
+                                                                       Term  Adjusted P-value  Combined Score
+                                  Peptide Biosynthetic Process (GO:0043043)          0.000793      211.846488
+                            Macromolecule Biosynthetic Process (GO:0009059)          0.000793      176.101207
+                                                   Translation (GO:0006412)          0.001018      143.619319
+                              Aerobic Electron Transport Chain (GO:0019646)          0.001018      292.986962
+        Mitochondrial ATP Synthesis Coupled Electron Transport (GO:0042775)          0.001018      282.570367
+                                          Cellular Respiration (GO:0045333)          0.001827      210.957273
+          Mitochondrial Electron Transport, NADH To Ubiquinone (GO:0006120)          0.001827      409.865143
+                                               Gene Expression (GO:0010467)          0.001827       93.449767
+                                       Cytoplasmic Translation (GO:0002181)          0.004253      130.244664
+                                     Oxidative Phosphorylation (GO:0006119)          0.005294      212.694997
+                                           Aerobic Respiration (GO:0009060)          0.005806      193.778302
+                    Mitotic G1 DNA Damage Checkpoint Signaling (GO:0031571)          0.011268      420.516628
+DNA Damage Response, Signal Transduction By P53 Class Mediator (GO:0030330)          0.016602      282.178629
+                     Positive Regulation Of Catalytic Activity (GO:0043085)          0.016602      282.178629
+           Energy Derivation By Oxidation Of Organic Compounds (GO:0015980)          0.033409      160.857959
+
+GO_Cellular_Component_2023_up: 9 terms with FDR < 0.05
+                                                  Term  Adjusted P-value  Combined Score
+             Mitochondrial Inner Membrane (GO:0005743)          0.000038      229.424927
+                 Organelle Inner Membrane (GO:0019866)          0.000038      197.425506
+                   Mitochondrial Membrane (GO:0031966)          0.000177      117.366602
+        Cytosolic Large Ribosomal Subunit (GO:0022625)          0.000177      304.057537
+                  Large Ribosomal Subunit (GO:0015934)          0.000177      304.057537
+              Respiratory Chain Complex I (GO:0045271)          0.000833      293.121900
+Mitochondrial Respiratory Chain Complex I (GO:0005747)          0.000833      293.121900
+                       Polysomal Ribosome (GO:0042788)          0.017753      129.693039
+                       Dendrite Cytoplasm (GO:0032839)          0.049602      492.425256
+
+GO_Molecular_Function_2023_up: 6 terms with FDR < 0.05
+                                                                        Term  Adjusted P-value  Combined Score
+Oxidoreduction-Driven Active Transmembrane Transporter Activity (GO:0015453)          0.000313      425.284830
+                          NADH Dehydrogenase (Quinone) Activity (GO:0050136)          0.000860      409.865143
+                       NADH Dehydrogenase (Ubiquinone) Activity (GO:0008137)          0.000860      409.865143
+                                                    RNA Binding (GO:0003723)          0.003510       38.604166
+                               Phosphatidylethanolamine Binding (GO:0008429)          0.021890             inf
+                                 Lactate Dehydrogenase Activity (GO:0004457)          0.021890             inf
+
+KEGG_2021_Human_up: 14 terms with FDR < 0.05
+                                Term  Adjusted P-value  Combined Score
+                            Ribosome          0.000133      236.089485
+                       Prion disease          0.001689      108.874638
+                  Huntington disease          0.001689      101.690211
+           Oxidative phosphorylation          0.001689      149.439691
+                 Coronavirus disease          0.001903       89.339780
+   Non-alcoholic fatty liver disease          0.002082      117.081514
+             Diabetic cardiomyopathy          0.002252       99.991216
+                       Thermogenesis          0.002252       98.133430
+       Amyotrophic lateral sclerosis          0.002252       68.303308
+Retrograde endocannabinoid signaling          0.003271      135.136743
+       Pathways of neurodegeneration          0.003314       54.956660
+                   Parkinson disease          0.004911       61.130559
+                   Alzheimer disease          0.010460       41.841469
+            Phenylalanine metabolism          0.037685      492.425256
+
+GO_Biological_Process_2023_down: 0 terms with FDR < 0.05
+
+GO_Cellular_Component_2023_down: 4 terms with FDR < 0.05
+                                 Term  Adjusted P-value  Combined Score
+Endoribonuclease Complex (GO:1902555)          0.017391             inf
+    RISC-loading Complex (GO:0070578)          0.017391             inf
+            RISC Complex (GO:0016442)          0.034713     1260.028151
+       Acrosomal Vesicle (GO:0001669)          0.043305      566.134618
+
+GO_Molecular_Function_2023_down: 9 terms with FDR < 0.05
+                                                                        Term  Adjusted P-value  Combined Score
+                                              pre-miRNA Binding (GO:0070883)          0.042348             inf
+                                Immunoglobulin Receptor Binding (GO:0034987)          0.042348     2723.006506
+ Endodeoxyribonuclease Activity, Producing 5'-Phosphomonoesters (GO:0016888)          0.042348     2723.006506
+                                                  siRNA Binding (GO:0035197)          0.042348     2723.006506
+      RNA Endonuclease Activity, Producing 5'-Phosphomonoesters (GO:0016891)          0.046914     1260.028151
+                                             LRR Domain Binding (GO:0030275)          0.046914      792.041642
+                                           Dipeptidase Activity (GO:0016805)          0.046914      792.041642
+Calcium-Dependent Protein Serine/Threonine Phosphatase Activity (GO:0004723)          0.046914      566.134618
+                                C2H2 Zinc Finger Domain Binding (GO:0070742)          0.046914      566.134618
+
+KEGG_2021_Human_down: 0 terms with FDR < 0.05

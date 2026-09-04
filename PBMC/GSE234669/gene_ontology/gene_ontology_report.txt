@@ -1,0 +1,17 @@
+Gene ontology (GO + KEGG) enrichment analysis
+
+GO_Biological_Process_2023_up: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_up: 0 terms with FDR < 0.05
+
+GO_Cellular_Component_2023_up: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_up: 0 terms with FDR < 0.05
+
+GO_Biological_Process_2023_down: 0 terms with FDR < 0.05
+
+GO_Molecular_Function_2023_down: 0 terms with FDR < 0.05
+
+GO_Cellular_Component_2023_down: 0 terms with FDR < 0.05
+
+KEGG_2021_Human_down: 0 terms with FDR < 0.05

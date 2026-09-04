@@ -1,0 +1,3 @@
+Gene_set,Term,P-value,Adjusted P-value,Old P-value,Old adjusted P-value,Odds Ratio,Combined Score,Genes
+GO_Cellular_Component_2023,Nucleus (GO:0005634),0.02575039000967232,0.034016216170931715,0,0,inf,inf,KHDRBS1;DNASE1
+GO_Cellular_Component_2023,Intracellular Membrane-Bounded Organelle (GO:0043231),0.034016216170931715,0.034016216170931715,0,0,inf,inf,KHDRBS1;DNASE1
